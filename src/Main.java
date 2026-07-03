@@ -4,15 +4,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner entrada = new Scanner(System.in);
-        Queue<Paciente> cola = new LinkedList<>();
+
+        Queue<Paciente> colaPacientes = new LinkedList<>();
 
         int opcion = 0;
         int numeroTurno = 1;
         int maximoTurnos = 5;
 
         while (opcion != 4) {
-            System.out.println("\n===== MENU DE TURNOS MEDICOS =====");
+
+            System.out.println("\n===== SISTEMA DE TURNOS MEDICOS =====");
             System.out.println("1. Tomar turno");
             System.out.println("2. Hacerse atender");
             System.out.println("3. Ver estado de la cola");
@@ -23,16 +26,17 @@ public class Main {
             entrada.nextLine();
 
             switch (opcion) {
+
                 case 1:
-                    System.out.println("Parte 2 pendiente: tomar turno.");
+                    System.out.println("Parte 2 pendiente: aqui se tomara el turno.");
                     break;
 
                 case 2:
-                    System.out.println("Parte 3 pendiente: hacerse atender.");
+                    System.out.println("Parte 3 pendiente: aqui se atendera al paciente.");
                     break;
 
                 case 3:
-                    System.out.println("Parte 4 pendiente: ver estado de la cola.");
+                    System.out.println("Parte 4 pendiente: aqui se vera el estado de la cola.");
                     break;
 
                 case 4:
@@ -40,7 +44,7 @@ public class Main {
                     break;
 
                 default:
-                    System.out.println("Opcion no valida. Intente otra vez.");
+                    System.out.println("Opcion no valida.");
                     break;
             }
         }
