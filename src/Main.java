@@ -28,7 +28,24 @@ public class Main {
             switch (opcion) {
 
                 case 1:
-                    System.out.println("Parte 2 pendiente: aqui se tomara el turno.");
+                    if (numeroTurno <= maximoTurnos) {
+
+                        System.out.print("Ingrese el nombre del paciente: ");
+                        String nombre = entrada.nextLine();
+
+                        Paciente nuevoPaciente = new Paciente(nombre, numeroTurno);
+
+                        colaPacientes.add(nuevoPaciente);
+
+                        System.out.println("Paciente registrado correctamente.");
+                        System.out.println("Nombre: " + nuevoPaciente.nombre);
+                        System.out.println("Su numero de turno es: " + nuevoPaciente.numeroTurno);
+
+                        numeroTurno++;
+
+                    } else {
+                        System.out.println("Ya no se pueden registrar mas pacientes.");
+                    }
                     break;
 
                 case 2:
