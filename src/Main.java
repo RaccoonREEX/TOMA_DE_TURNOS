@@ -44,7 +44,7 @@ public class Main {
                         numeroTurno++;
 
                     } else {
-                        System.out.println("Ya no se pueden registrar mas pacientes.");
+                        System.out.println("Ya no se pueden registrar mas pacientes en este momento.");
                     }
                     break;
 
