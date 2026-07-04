@@ -15,7 +15,7 @@ public class Main {
 
         while (opcion != 4) {
 
-            System.out.println("\n===== SISTEMA DE TURNOS MEDICOS =====");
+            System.out.println("\n SISTEMA DE TURNOS MEDICOS");
             System.out.println("1. Tomar turno");
             System.out.println("2. Hacerse atender");
             System.out.println("3. Ver estado de la cola");
