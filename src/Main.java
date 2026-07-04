@@ -95,6 +95,14 @@ public class Main {
                         System.out.println("Nombre: " + siguiente.nombre);
                         System.out.println("Turno: " + siguiente.numeroTurno);
 
+                        System.out.println("\nLista de pacientes en cola:");
+
+                        for (Paciente paciente : colaPacientes) {
+                            System.out.println("Turno " + paciente.numeroTurno + " - " + paciente.nombre);
+                        }
+                    }
+                    break;
+
 
                 case 4:
                     System.out.println("Programa finalizado.");
