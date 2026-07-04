@@ -49,8 +49,37 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println("Parte 3 pendiente: aqui se atendera al paciente.");
+                    if (colaPacientes.isEmpty()) {
+
+                        System.out.println("No hay pacientes en espera.");
+
+                    } else {
+
+                        Paciente siguiente = colaPacientes.peek();
+
+                        System.out.println("El siguiente paciente es:");
+                        System.out.println("Nombre: " + siguiente.nombre);
+                        System.out.println("Turno: " + siguiente.numeroTurno);
+
+                        System.out.print("Ingrese su numero de turno para ser atendido: ");
+                        int turnoIngresado = entrada.nextInt();
+                        entrada.nextLine();
+
+                        if (turnoIngresado == siguiente.numeroTurno) {
+
+                            Paciente pacienteAtendido = colaPacientes.poll();
+
+                            System.out.println("El paciente " + pacienteAtendido.nombre + " ha sido atendido.");
+                            System.out.println("Pacientes en espera: " + colaPacientes.size());
+
+                        } else {
+
+                            System.out.println("Ese turno no corresponde al siguiente paciente.");
+                            System.out.println("Debe ser atendido el turno: " + siguiente.numeroTurno);
+                        }
+                    }
                     break;
+
 
                 case 3:
                     System.out.println("Parte 4 pendiente: aqui se vera el estado de la cola.");
