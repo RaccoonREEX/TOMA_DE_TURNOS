@@ -82,8 +82,10 @@ public class Main {
 
 
                 case 3:
-                    System.out.println("Parte 4 pendiente: aqui se vera el estado de la cola.");
-                    break;
+                    if (colaPacientes.isEmpty()) {
+
+                        System.out.println("No hay pacientes en la cola.");
+
 
                 case 4:
                     System.out.println("Programa finalizado.");
