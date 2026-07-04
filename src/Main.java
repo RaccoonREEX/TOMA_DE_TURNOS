@@ -85,6 +85,15 @@ public class Main {
                     if (colaPacientes.isEmpty()) {
 
                         System.out.println("No hay pacientes en la cola.");
+                    } else {
+
+                        System.out.println("Pacientes en espera: " + colaPacientes.size());
+
+                        Paciente siguiente = colaPacientes.peek();
+
+                        System.out.println("Siguiente paciente:");
+                        System.out.println("Nombre: " + siguiente.nombre);
+                        System.out.println("Turno: " + siguiente.numeroTurno);
 
 
                 case 4:
